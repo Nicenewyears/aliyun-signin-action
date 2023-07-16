@@ -2,7 +2,7 @@ name: Aliyun Signin
 on:
   schedule:
     # 每天中国时间0点后的随机分钟数运行一次
-    - cron: '0 ${{ randInt(1, 59) }} * * *'
+    - cron: '0 ${{ randomInt(1, 59) }} * * *'
   workflow_dispatch:
 jobs:
   signin:
